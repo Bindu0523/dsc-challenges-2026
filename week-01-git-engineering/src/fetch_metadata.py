@@ -17,10 +17,10 @@ import json
 # ==============================================================================
 # RECRUIT METADATA (Fill these in with your real details)
 # ==============================================================================
-STUDENT_USN = "01FEXXXXXXXX"        # e.g., "01FE25BCS122"
-STUDENT_NAME = "Your Full Name"     # e.g., "Ajay Mallappa"
-BRANCH = "CSE"                      # e.g., "CSE", "AI/DS", "ECE"
-TRACK = "CREDIT_TRACK_YEAR2"        # "CREDIT_TRACK_YEAR2" or "GROWTH_TRACK_YEAR1"
+STUDENT_USN = "01FE26BAR007"        # e.g., "01FE26BAR00725BCS122"
+STUDENT_NAME = "Bindu P"     # e.g., "Ajay Mallappa"
+BRANCH = "A AND R"                      # e.g., "CSE", "AI/DS", "ECE"
+TRACK = "GROWTH_TRACK_YEAR1"        # "CREDIT_TRACK_YEAR2" or "GROWTH_TRACK_YEAR1"
 
 
 def collect_environment_metadata() -> dict:
@@ -39,10 +39,10 @@ def collect_environment_metadata() -> dict:
 
     metadata = {
         "student": {
-            "usn": STUDENT_USN.strip().upper(),
-            "name": STUDENT_NAME.strip(),
-            "branch": BRANCH.strip(),
-            "track": TRACK.strip()
+            "usn": "01FE26BAR007".strip().upper(),
+            "name": "Bindu".strip(),
+            "branch":" A AND R".strip(),
+            "track":"GROWTH_TRACK_YEAR1".strip()
         },
         "environment": {
             "python_version": sys.version.split()[0],
